@@ -17,8 +17,12 @@ public class Main {
         };
         Solver.print(board);
         System.out.println(System.lineSeparator());
+        long startTime = System.currentTimeMillis();
         if (Solver.solve(board)) {
-            System.out.println("Found a solution"  + System.lineSeparator());
+            long stopTime = System.currentTimeMillis();
+            long elapsedTime = stopTime - startTime;
+            System.out.println("Found a solution");
+            System.out.println("Solving time in MS: " + elapsedTime + System.lineSeparator());
             Solver.print(board);
             System.out.println(System.lineSeparator());
         }
