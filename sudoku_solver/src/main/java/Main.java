@@ -15,11 +15,11 @@ public class Main {
                 {0,1,0,9,8,0,0,0,6},
                 {0,0,0,3,1,0,9,0,0}
         };
-        SudokuSolver.print(board);
+        Solver.print(board);
         System.out.println(System.lineSeparator());
-        if (SudokuSolver.solve(board)) {
+        if (Solver.solve(board)) {
             System.out.println("Found a solution"  + System.lineSeparator());
-            SudokuSolver.print(board);
+            Solver.print(board);
             System.out.println(System.lineSeparator());
         }
         else{
