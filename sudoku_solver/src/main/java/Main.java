@@ -17,7 +17,7 @@ public class Main {
         };
         SudokuSolver.print(board);
         System.out.println(System.lineSeparator());
-        if(SudokuSolver.Solve(board)) {
+        if (SudokuSolver.solve(board)) {
             System.out.println("Found a solution"  + System.lineSeparator());
             SudokuSolver.print(board);
             System.out.println(System.lineSeparator());
